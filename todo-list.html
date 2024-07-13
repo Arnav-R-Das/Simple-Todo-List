@@ -1,0 +1,1367 @@
+<!DOCTYPE html>
+
+<html lang = "en-IN">
+
+    <head>
+
+        <!-- TITLE -->
+            <title>
+                Todo list
+            </title>
+
+        <!-- CSS -->
+            <link
+                href = "todo-list.css"
+                rel = "stylesheet"
+                type = "text/css"
+            >
+
+        <!-- OTHER-->
+            <meta 
+                charset = "utf-8"
+                name = "viewport"
+                content = "
+                    width = device-width,
+                    initial-scale = 1
+                "
+            >
+
+    </head>
+
+    <body>
+
+        <!-- HEADER -->
+            <div class = "header">
+                <table>
+                    <tr>
+                        <td
+                            class = number
+                            style = "border: none;"
+                        >
+                        </td>
+                        <td
+                            class = time
+                            style = "border: none;"
+                        >
+                            Deadline
+                        </td>
+                        <td>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td
+                            class = number
+                            style = "border: none;"
+                        >
+                        </td>
+                        <td
+                            class = time
+                            style = "border: none;"
+                        >
+                            Schedule
+                        </td>
+                        <td>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+        <!-- MATRIX  -->
+            <div class = "matrix">
+                <div>
+                    <table>
+                        <tr>
+                            <td class = "number">
+                            </td>
+                            <td class = "time">
+                                Oct 23
+                            </td>
+                            <td class = "task">
+                                - Chrome extension <br>(localStorage)
+                            </td>
+                            <td class = "update">
+                                <button>
+                                    E
+                                </button>
+                                <button>
+                                    S
+                                </button>
+                                <button>
+                                    R
+                                </button>
+                                <button>
+                                    D
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class = "number">
+                            </td>
+                            <td class = "time">
+                                Oct 23
+                            </td>
+                            <td class = "task">
+                                • Learn JavaScript
+                            </td>
+                            <td class = "update">
+                                <button>
+                                    E
+                                </button>
+                                <button>
+                                    S
+                                </button>
+                                <button>
+                                    R
+                                </button>
+                                <button>
+                                    D
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class = "number">
+                            </td>
+                            <td class = "time">
+                            </td>
+                            <td class = "task">
+                                • Learn JSON
+                            </td>
+                            <td class = "update">
+                                <button>
+                                    E
+                                </button>
+                                <button>
+                                    S
+                                </button>
+                                <button>
+                                    R
+                                </button>
+                                <button>
+                                    D
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class = "number">
+                            </td>
+                            <td class = "time">
+                            </td>
+                            <td class = "task">
+                                • Learn JQuery
+                            </td>
+                            <td class = "update">
+                                <button>
+                                    E
+                                </button>
+                                <button>
+                                    S
+                                </button>
+                                <button>
+                                    R
+                                </button>
+                                <button>
+                                    D
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class = "number">
+                            </td>
+                            <td class = "time">
+                            </td>
+                            <td class = "task">
+                                • Learn PHP
+                            </td>
+                            <td class = "update">
+                                <button>
+                                    E
+                                </button>
+                                <button>
+                                    S
+                                </button>
+                                <button>
+                                    R
+                                </button>
+                                <button>
+                                    D
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class = "number">
+                            </td>
+                            <td class = "time">
+                            </td>
+                            <td class = "task">
+                                5
+                            </td>
+                            <td class = "update">
+                                <button>
+                                    E
+                                </button>
+                                <button>
+                                    S
+                                </button>
+                                <button>
+                                    R
+                                </button>
+                                <button>
+                                    D
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class = "number">
+                            </td>
+                            <td class = "time">
+                            </td>
+                            <td class = "task">
+                                6
+                            </td>
+                            <td class = "update">
+                                <button>
+                                    E
+                                </button>
+                                <button>
+                                    S
+                                </button>
+                                <button>
+                                    R
+                                </button>
+                                <button>
+                                    D
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class = "number">
+                            </td>
+                            <td class = "time">
+                            </td>
+                            <td class = "task">
+                                7
+                            </td>
+                            <td class = "update">
+                                <button>
+                                    E
+                                </button>
+                                <button>
+                                    S
+                                </button>
+                                <button>
+                                    R
+                                </button>
+                                <button>
+                                    D
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class = "number">
+                            </td>
+                            <td class = "time">
+                            </td>
+                            <td class = "task">
+                                8
+                            </td>
+                            <td class = "update">
+                                <button>
+                                    E
+                                </button>
+                                <button>
+                                    S
+                                </button>
+                                <button>
+                                    R
+                                </button>
+                                <button>
+                                    D
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class = "number">
+                            </td>
+                            <td class = "time">
+                            </td>
+                            <td class = "task">
+                                9
+                            </td>
+                            <td class = "update">
+                                <button>
+                                    E
+                                </button>
+                                <button>
+                                    S
+                                </button>
+                                <button>
+                                    R
+                                </button>
+                                <button>
+                                    D
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class = "number">
+                            </td>
+                            <td class = "time">
+                            </td>
+                            <td class = "task">
+                                10
+                            </td>
+                            <td class = "update">
+                                <button>
+                                    E
+                                </button>
+                                <button>
+                                    S
+                                </button>
+                                <button>
+                                    R
+                                </button>
+                                <button>
+                                    D
+                                </button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <table>
+                        <tr>
+                            <td class = "number">
+                            </td>
+                            <td class = "time">
+                                Oct 23
+                            </td>
+                            <td class = "task">
+                                • CRUD
+                            </td>
+                            <td class = "update">
+                                <button>
+                                    E
+                                </button>
+                                <button>
+                                    S
+                                </button>
+                                <button>
+                                    R
+                                </button>
+                                <button>
+                                    D
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class = "number">
+                            </td>
+                            <td class = "time">
+                            </td>
+                            <td class = "task">
+                                • Reorder
+                            </td>
+                            <td class = "update">
+                                <button>
+                                    E
+                                </button>
+                                <button>
+                                    S
+                                </button>
+                                <button>
+                                    R
+                                </button>
+                                <button>
+                                    D
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class = "number">
+                            </td>
+                            <td class = "time">
+                            </td>
+                            <td class = "task">
+                                • Subtasks
+                            </td>
+                            <td class = "update">
+                                <button>
+                                    E
+                                </button>
+                                <button>
+                                    S
+                                </button>
+                                <button>
+                                    R
+                                </button>
+                                <button>
+                                    D
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class = "number">
+                            </td>
+                            <td class = "time">
+                            </td>
+                            <td class = "task">
+                                • Goals?
+                            </td>
+                            <td class = "update">
+                                <button>
+                                    E
+                                </button>
+                                <button>
+                                    S
+                                </button>
+                                <button>
+                                    R
+                                </button>
+                                <button>
+                                    D
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class = "number">
+                            </td>
+                            <td class = "time">
+                            </td>
+                            <td class = "task">
+                                6
+                            </td>
+                            <td class = "update">
+                                <button>
+                                    E
+                                </button>
+                                <button>
+                                    S
+                                </button>
+                                <button>
+                                    R
+                                </button>
+                                <button>
+                                    D
+                                </button>
+                            </td>
+                        <tr>
+                            <td class = "number">
+                            </td>
+                            <td class = "time">
+                            </td>
+                            <td class = "task">
+                                7
+                            </td>
+                            <td class = "update">
+                                <button>
+                                    E
+                                </button>
+                                <button>
+                                    S
+                                </button>
+                                <button>
+                                    R
+                                </button>
+                                <button>
+                                    D
+                                </button>
+                            </td>
+                        <tr>
+                            <td class = "number">
+                            </td>
+                            <td class = "time">
+                            </td>
+                            <td class = "task">
+                                8
+                            </td>
+                            <td class = "update">
+                                <button>
+                                    E
+                                </button>
+                                <button>
+                                    S
+                                </button>
+                                <button>
+                                    R
+                                </button>
+                                <button>
+                                    D
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class = "number">
+                            </td>
+                            <td class = "time">
+                            </td>
+                            <td class = "task">
+                                9
+                            </td>
+                            <td class = "update">
+                                <button>
+                                    E
+                                </button>
+                                <button>
+                                    S
+                                </button>
+                                <button>
+                                    R
+                                </button>
+                                <button>
+                                    D
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class = "number">
+                            </td>
+                            <td class = "time">
+                            </td>
+                            <td class = "task">
+                                10
+                            </td>
+                            <td class = "update">
+                                <button>
+                                    E
+                                </button>
+                                <button>
+                                    S
+                                </button>
+                                <button>
+                                    R
+                                </button>
+                                <button>
+                                    D
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class = "number">
+                            </td>
+                            <td class = "time">
+                            </td>
+                            <td class = "task">
+                                11
+                            </td>
+                            <td class = "update">
+                                <button>
+                                    E
+                                </button>
+                                <button>
+                                    S
+                                </button>
+                                <button>
+                                    R
+                                </button>
+                                <button>
+                                    D
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class = "number">
+                            </td>
+                            <td class = "time">
+                            </td>
+                            <td class = "task">
+                                12
+                            </td>
+                            <td class = "update">
+                                <button>
+                                    E
+                                </button>
+                                <button>
+                                    S
+                                </button>
+                                <button>
+                                    R
+                                </button>
+                                <button>
+                                    D
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class = "number">
+                            </td>
+                            <td class = "time">
+                            </td>
+                            <td class = "task">
+                                13
+                            </td>
+                            <td class = "update">
+                                <button>
+                                    E
+                                </button>
+                                <button>
+                                    S
+                                </button>
+                                <button>
+                                    R
+                                </button>
+                                <button>
+                                    D
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class = "number">
+                            </td>
+                            <td class = "time">
+                            </td>
+                            <td class = "task">
+                                14
+                            </td>
+                            <td class = "update">
+                                <button>
+                                    E
+                                </button>
+                                <button>
+                                    S
+                                </button>
+                                <button>
+                                    R
+                                </button>
+                                <button>
+                                    D
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class = "number">
+                            </td>
+                            <td class = "time">
+                            </td>
+                            <td class = "task">
+                                15
+                            </td>
+                            <td class = "update">
+                                <button>
+                                    E
+                                </button>
+                                <button>
+                                    S
+                                </button>
+                                <button>
+                                    R
+                                </button>
+                                <button>
+                                    D
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class = "number">
+                            </td>
+                            <td class = "time">
+                            </td>
+                            <td class = "task">
+                                16
+                            </td>
+                            <td class = "update">
+                                <button>
+                                    E
+                                </button>
+                                <button>
+                                    S
+                                </button>
+                                <button>
+                                    R
+                                </button>
+                                <button>
+                                    D
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class = "number">
+                            </td>
+                            <td class = "time">
+                            </td>
+                            <td class = "task">
+                                17
+                            </td>
+                            <td class = "update">
+                                <button>
+                                    E
+                                </button>
+                                <button>
+                                    S
+                                </button>
+                                <button>
+                                    R
+                                </button>
+                                <button>
+                                    D
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class = "number">
+                            </td>
+                            <td class = "time">
+                            </td>
+                            <td class = "task">
+                                18
+                            </td>
+                            <td class = "update">
+                                <button>
+                                    E
+                                </button>
+                                <button>
+                                    S
+                                </button>
+                                <button>
+                                    R
+                                </button>
+                                <button>
+                                    D
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class = "number">
+                            </td>
+                            <td class = "time">
+                            </td>
+                            <td class = "task">
+                                19
+                            </td>
+                            <td class = "update">
+                                <button>
+                                    E
+                                </button>
+                                <button>
+                                    S
+                                </button>
+                                <button>
+                                    R
+                                </button>
+                                <button>
+                                    D
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class = "number">
+                            </td>
+                            <td class = "time">
+                            </td>
+                            <td class = "task">
+                                20
+                            </td>
+                            <td class = "update">
+                                <button>
+                                    E
+                                </button>
+                                <button>
+                                    S
+                                </button>
+                                <button>
+                                    R
+                                </button>
+                                <button>
+                                    D
+                                </button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <table>
+                        <tr>
+                            <td class = "number">
+                            </td>
+                            <td class = "time">
+                                Oct 23
+                            </td>
+                            <td class = "task">
+                                1
+                            </td>
+                            <td class = "update">
+                                <button>
+                                    E
+                                </button>
+                                <button>
+                                    S
+                                </button>
+                                <button>
+                                    R
+                                </button>
+                                <button>
+                                    D
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class = "number">
+                            </td>
+                            <td class = "time">
+                            </td>
+                            <td class = "task">
+                                2
+                            </td>
+                            <td class = "update">
+                                <button>
+                                    E
+                                </button>
+                                <button>
+                                    S
+                                </button>
+                                <button>
+                                    R
+                                </button>
+                                <button>
+                                    D
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class = "number">
+                                
+                            </td>
+                            <td class = "time">
+                            </td>
+                            <td class = "task">
+                                3
+                            </td>
+                            <td class = "update">
+                                <button>
+                                    E
+                                </button>
+                                <button>
+                                    S
+                                </button>
+                                <button>
+                                    R
+                                </button>
+                                <button>
+                                    D
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class = "number">
+                            </td>
+                            <td class = "time">
+                            </td>
+                            <td class = "task">
+                                4
+                            </td>
+                            <td class = "update">
+                                <button>
+                                    E
+                                </button>
+                                <button>
+                                    S
+                                </button>
+                                <button>
+                                    R
+                                </button>
+                                <button>
+                                    D
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class = "number">
+                            </td>
+                            <td class = "time">
+                            </td>
+                            <td class = "task">
+                                5
+                            </td>
+                            <td class = "update">
+                                <button>
+                                    E
+                                </button>
+                                <button>
+                                    S
+                                </button>
+                                <button>
+                                    R
+                                </button>
+                                <button>
+                                    D
+                                </button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <table>
+                        <tr>
+                            <td class = "number">
+                            </td>
+                            <td class = "time">
+                                Oct 23
+                            </td>
+                            <td class = "task">
+                                1
+                            </td>
+                            <td class = "update">
+                                <button>
+                                    E
+                                </button>
+                                <button>
+                                    S
+                                </button>
+                                <button>
+                                    R
+                                </button>
+                                <button>
+                                    D
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class = "number">
+                            </td>
+                            <td class = "time">
+                            </td>
+                            <td class = "task">
+                                2
+                            </td>
+                            <td class = "update">
+                                <button>
+                                    E
+                                </button>
+                                <button>
+                                    S
+                                </button>
+                                <button>
+                                    R
+                                </button>
+                                <button>
+                                    D
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class = "number">
+                            </td>
+                            <td class = "time">
+                            </td>
+                            <td class = "task">
+                                3
+                            </td>
+                            <td class = "update">
+                                <button>
+                                    E
+                                </button>
+                                <button>
+                                    S
+                                </button>
+                                <button>
+                                    R
+                                </button>
+                                <button>
+                                    D
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class = "number">
+                            </td>
+                            <td class = "time">
+                            </td>
+                            <td class = "task">
+                                4
+                            </td>
+                            <td class = "update">
+                                <button>
+                                    E
+                                </button>
+                                <button>
+                                    S
+                                </button>
+                                <button>
+                                    R
+                                </button>
+                                <button>
+                                    D
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class = "number">
+                            </td>
+                            <td class = "time">
+                            </td>
+                            <td class = "task">
+                                5
+                            </td>
+                            <td class = "update">
+                                <button>
+                                    E
+                                </button>
+                                <button>
+                                    S
+                                </button>
+                                <button>
+                                    R
+                                </button>
+                                <button>
+                                    D
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class = "number">
+                            </td>
+                            <td class = "time">
+                            </td>
+                            <td class = "task">
+                                6
+                            </td>
+                            <td class = "update">
+                                <button>
+                                    E
+                                </button>
+                                <button>
+                                    S
+                                </button>
+                                <button>
+                                    R
+                                </button>
+                                <button>
+                                    D
+                                </button>
+                            </td>
+                        <tr>
+                            <td class = "number">
+                            </td>
+                            <td class = "time">
+                            </td>
+                            <td class = "task">
+                                7
+                            </td>
+                            <td class = "update">
+                                <button>
+                                    E
+                                </button>
+                                <button>
+                                    S
+                                </button>
+                                <button>
+                                    R
+                                </button>
+                                <button>
+                                    D
+                                </button>
+                            </td>
+                        <tr>
+                            <td class = "number">
+                                
+                            </td>
+                            <td class = "time">
+                            </td>
+                            <td class = "task">
+                                8
+                            </td>
+                            <td class = "update">
+                                <button>
+                                    E
+                                </button>
+                                <button>
+                                    S
+                                </button>
+                                <button>
+                                    R
+                                </button>
+                                <button>
+                                    D
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class = "number">
+                                
+                            </td>
+                            <td class = "time">
+                            </td>
+                            <td class = "task">
+                                9
+                            </td>
+                            <td class = "update">
+                                <button>
+                                    E
+                                </button>
+                                <button>
+                                    S
+                                </button>
+                                <button>
+                                    R
+                                </button>
+                                <button>
+                                    D
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class = "number">
+                            </td>
+                            <td class = "time">
+                            </td>
+                            <td class = "task">
+                                10
+                            </td>
+                            <td class = "update">
+                                <button>
+                                    E
+                                </button>
+                                <button>
+                                    S
+                                </button>
+                                <button>
+                                    R
+                                </button>
+                                <button>
+                                    D
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class = "number">
+                            </td>
+                            <td class = "time">
+                            </td>
+                            <td class = "task">
+                                11
+                            </td>
+                            <td class = "update">
+                                <button>
+                                    E
+                                </button>
+                                <button>
+                                    S
+                                </button>
+                                <button>
+                                    R
+                                </button>
+                                <button>
+                                    D
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class = "number">
+                            </td>
+                            <td class = "time">
+                            </td>
+                            <td class = "task">
+                                12
+                            </td>
+                            <td class = "update">
+                                <button>
+                                    E
+                                </button>
+                                <button>
+                                    S
+                                </button>
+                                <button>
+                                    R
+                                </button>
+                                <button>
+                                    D
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class = "number">
+                            </td>
+                            <td class = "time">
+                            </td>
+                            <td class = "task">
+                                13
+                            </td>
+                            <td class = "update">
+                                <button>
+                                    E
+                                </button>
+                                <button>
+                                    S
+                                </button>
+                                <button>
+                                    R
+                                </button>
+                                <button>
+                                    D
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class = "number">
+                            </td>
+                            <td class = "time">
+                            </td>
+                            <td class = "task">
+                                14
+                            </td>
+                            <td class = "update">
+                                <button>
+                                    E
+                                </button>
+                                <button>
+                                    S
+                                </button>
+                                <button>
+                                    R
+                                </button>
+                                <button>
+                                    D
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class = "number">
+                            </td>
+                            <td class = "time">
+                            </td>
+                            <td class = "task">
+                                15
+                            </td>
+                            <td class = "update">
+                                <button>
+                                    E
+                                </button>
+                                <button>
+                                    S
+                                </button>
+                                <button>
+                                    R
+                                </button>
+                                <button>
+                                    D
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class = "number">
+                            </td>
+                            <td class = "time">
+                            </td>
+                            <td class = "task">
+                                16
+                            </td>
+                            <td class = "update">
+                                <button>
+                                    E
+                                </button>
+                                <button>
+                                    S
+                                </button>
+                                <button>
+                                    R
+                                </button>
+                                <button>
+                                    D
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class = "number">
+                            </td>
+                            <td class = "time">
+                            </td>
+                            <td class = "task">
+                                17
+                            </td>
+                            <td class = "update">
+                                <button>
+                                    E
+                                </button>
+                                <button>
+                                    S
+                                </button>
+                                <button>
+                                    R
+                                </button>
+                                <button>
+                                    D
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class = "number">
+                            </td>
+                            <td class = "time">
+                            </td>
+                            <td class = "task">
+                                18
+                            </td>
+                            <td class = "update">
+                                <button>
+                                    E
+                                </button>
+                                <button>
+                                    S
+                                </button>
+                                <button>
+                                    R
+                                </button>
+                                <button>
+                                    D
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class = "number">
+                            </td>
+                            <td class = "time">
+                            </td>
+                            <td class = "task">
+                                19
+                            </td>
+                            <td class = "update">
+                                <button>
+                                    E
+                                </button>
+                                <button>
+                                    S
+                                </button>
+                                <button>
+                                    R
+                                </button>
+                                <button>
+                                    D
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class = "number">
+                            </td>
+                            <td class = "time">
+                            </td>
+                            <td class = "task">
+                                20
+                            </td>
+                            <td class = "update">
+                                <button>
+                                    E
+                                </button>
+                                <button>
+                                    S
+                                </button>
+                                <button>
+                                    R
+                                </button>
+                                <button>
+                                    D
+                                </button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+        <!-- ADD TASKS -->
+            <div class="add-tasks">
+                Add tasks
+            </div>
+
+    </body>
+
+</html>
