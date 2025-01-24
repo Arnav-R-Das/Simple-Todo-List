@@ -1,0 +1,203 @@
+/*************************** ALL **************************/
+
+:root {
+
+    /* HEIGHT & WIDTH */
+        --height-nav-bar: 40px;
+
+        --height-container-1: 40px;
+            --width-x-axis: calc(100% - var(--width-y-axis));
+                --width-x-axis-div: 50%;
+
+        --height-container-2: calc(100vh - (var(--height-nav-bar) + var(--height-container-1) + var(--height-container-3)));
+            --width-y-axis: 40px;
+                --heigth-y-axis-div: 50%;
+            --width-matrix: calc(100% - var(--width-y-axis));
+                --width-matrix-div: 50%;
+                    --height-matrix-div: calc(var(--height-container-2) / 2);
+                        --width-matrix-div-table: 100%;
+                            --height-td: 30px;
+                            --width-td-order: 80px;
+                                --width-td-order-input: calc(var(--width-td-update-button) - 2px);
+                            --width-td-time: 80px;
+                            --width-td-update: 99px;
+                                --width-td-update-button: 30px;
+
+        --height-container-3: 40px;
+            --width-mode: 100px;
+            --width-add: calc(100% - (var(--width-y-axis)));
+
+    /* COLORS */
+        --color-dark: hsl(0, 0%, 0%);
+        --color-light: hsl(0, 0%, 100%);
+        --color-a-hover: hsl(0, 0%, 15%);
+        --color-a-active: hsl(100, 100%, 50%);
+        --color-border: hsl(0, 0%, 75%);
+
+    /* FONTS */
+        --font-family-standard: cursive;
+        --font-size-standard: 14px;
+
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-family-standard);
+    font-size: var(--font-size-standard);
+}
+
+/*********************** NAV-BAR **********************/
+
+#nav-bar {
+    height: var(--height-nav-bar);
+    outline: 1px solid var(--color-border);
+    background-color: var(--color-dark);
+
+    color: var(--color-light);
+    text-align: center;
+}
+
+/*********************** CONTAINER-1 **********************/
+
+#container-1 {
+    height: var(--height-container-1);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: end;
+    background-color: var(--color-dark);
+    color: var(--color-light);
+}
+
+#x-axis {
+    width: var(--width-x-axis);
+    display: flex;
+}
+
+#x-axis > div {
+    width: var(--width-x-axis-div);
+    text-align: center;
+    margin: auto;
+}
+
+/*********************** CONTAINER-2 **********************/
+
+#container-2 {
+    height: var(--height-container-2);
+    display: flex;
+}
+
+#y-axis {
+    width: var(--width-y-axis);
+    background-color: var(--color-dark);
+    color: var(--color-light);
+}
+
+#y-axis > div {
+    height: var(--heigth-y-axis-div);
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    text-align: center;
+    margin: auto;
+}
+
+.matrix {
+    width: var(--width-matrix);
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.matrix > div {
+    width: var(--width-matrix-div);
+    height: var(--height-matrix-div);
+    margin: 0px;
+    background-color: var(--color-border);
+    outline: 5px solid var(--color-dark);
+    overflow: scroll;
+}
+
+.matrix > div > table {
+    margin: 0px;
+    border-collapse: collapse;
+    width: var(--width-matrix-div-table);
+}
+
+/*************************** TD ***************************/
+
+td {
+    background-color: var(--color-light);
+}
+
+td > input {
+    height: var(--width-td-order-input);
+    border: none;
+}
+
+.order {
+    width: var(--width-td-order);
+    border: 1px solid var(--color-border);
+}
+
+.order > input {
+    width: var(--width-td-order);
+    text-align: center;
+}
+
+.time {
+    width: var(--width-td-time);
+    flex-shrink: 0;
+    border: 1px solid var(--color-border);
+}
+
+.time > input {
+    width: var(--width-td-time);
+    text-align: center;
+}
+
+.task {
+    border: 1px solid var(--color-border);
+}
+
+.task > input{
+    width: calc(100% - 3px);
+}
+
+.update {
+    width: var(--width-td-update);
+    border: 1px solid var(--color-border);
+    text-align: right;
+}
+
+.update > button {
+    visibility: hidden;
+    height: var(--height-td);
+    width: var(--width-td-update-button);
+    border: none;
+    background-color: var(--color-a-active);
+    outline: 3px solid var(--color-a-active);
+    color: hsl(0, 0%, 100%);
+}
+
+tr:hover > .update > button {
+    visibility: visible;
+}
+
+/*********************** CONTAINER-3 **********************/
+
+
+#container-3 {
+    height: var(--height-container-3);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: end;
+    background-color: var(--color-dark);
+    color: var(--color-light);
+}
+
+#container-3 > div {
+    width: var(--width-add);
+}
+
+#add {
+    width: var(--width-add);
+    height: calc(var(--height-container-3) - 10px);
+}

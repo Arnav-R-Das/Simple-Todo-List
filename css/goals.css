@@ -1,0 +1,105 @@
+/*************************** ALL **************************/
+
+:root {
+
+    /* HEIGHT & WIDTH */
+        --width-container: 50%;
+        --width-inputEntity: 80%;
+        --height-inputEntity: 20px;
+
+        --height-container-1: calc(100vh - (var(--height-nav-bar) + var(--height-container-2)));
+
+        --height-container-2: 40px;
+        --width-add: 60%;
+
+    /* POSITION */
+        --position-deleteEntity: calc(((100% - var(--width-container)) / 2) + 10px);
+
+    /* COLOR */
+        --background-color-li: hsl(0, 0%, 20%);
+        --color-li: hsl(0, 0%, 100%);
+}
+
+/************************ CONTAINER ***********************/
+
+body {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    font-family: cursive;
+}
+
+.container {
+    width: var(--width-container);
+    margin: 0 auto;
+    text-align: center;
+}
+
+#inputEntity {
+    width: var(--width-inputEntity);
+    height: var(--height-inputEntity);
+    padding: 5px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    margin: 5px 0;
+    padding: 8px;
+    text-align: left;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    background-color: var(--background-color-li);
+    color: var(--color-li);
+}
+
+.deleteEntity {
+    position: absolute;
+    right: var(--position-deleteEntity);
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: hsl(0, 100%, 70%);
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+li:not(:hover) > .deleteEntity {
+    display: none;
+}
+
+/*********************** CONTAINER-1 **********************/
+
+#container-1 {
+    height: var(--height-container-1);
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+#container-1 > div {
+    outline: 1px solid var(--color-border);
+    height: calc(var(--height-container-1) / 5);
+    overflow: scroll;
+}
+
+/*********************** CONTAINER-2 **********************/
+
+
+#container-2 {
+    height: var(--height-container-2);
+    display: flex;
+    flex-flow: row nowrap;
+    outline: 1px solid var(--color-border);
+    background-color: var(--color-dark);
+    color: var(--color-light);
+}
+
+#add {
+    width: var(--width-add);
+    height: calc(var(--height-container-2) - 10px);
+    margin: auto;
+}

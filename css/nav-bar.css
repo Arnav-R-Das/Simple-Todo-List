@@ -1,0 +1,43 @@
+/*********************** NAV-BAR **********************/
+
+#nav-bar {
+    height: var(--height-nav-bar);
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0;
+    outline: 1px solid var(--color-border);
+    background-color: var(--color-dark);
+}
+
+#nav-bar > a:link, a:visited {
+    padding: calc(((var(--height-nav-bar) - var(--font-size-standard)) / 2) - 5px) 30px;
+    text-decoration: none;
+    color: var(--color-light);
+}
+
+#nav-bar > a:hover {
+    background-color: var(--color-a-hover);
+}
+
+#nav-bar > a:active {
+    background-color: var(--color-a-active);
+}
+
+#nav-bar > button {
+    justify-self: flex-end;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: none;
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    font-family: var(--font-family-standard);
+    font-size: var(--font-size-standard);
+}
+
+#nav-bar > button:hover {
+    background-color: var(--color-a-hover);
+}
+
+#nav-bar > button:active {
+    background-color: var(--color-a-active);
+}
